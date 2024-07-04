@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --primary-color: #4b73ff;
+  --secondary-color: #e91e63;
+  --background-color: #1A1A40;
+  --text-color: #fff;
+  --shadow-color: #000;
+  --button-hover-color: #c2185b;
+  --todo-form-button-hover-color: #0288d1;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-color);
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 40px;
+  box-shadow: 10px 10px 12px var(--shadow-color);
+  width: 100%;
+  max-width: 700px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  width: 100%;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item span {
+  cursor: pointer;
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todo-item span.completed {
+  text-decoration: line-through;
+}
+
+.todo-item button {
+  margin-left: 5px;
+  background: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todo-item button:hover {
+  background: var(--button-hover-color);
+}
+
+.todo-item input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.todo-form {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.todo-input {
+  width: 80%;
+  outline: none;
+  background: none;
+  border: 1px solid var(--primary-color);
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: var(--text-color);
+}
+
+.todo-btn {
+  width: 20%;
+}
+
+.todo-form input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.todo-form button {
+  background: #03a9f4;
+  color: var(--text-color);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.todo-form button:hover {
+  background: var(--todo-form-button-hover-color);
+}
+
+.todo-container{
+
+}

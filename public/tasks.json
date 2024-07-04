@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "text": "Görev 1",
+    "completed": false
+  },
+  {
+    "id": 2,
+    "text": "Görev 2",
+    "completed": true
+  },
+  {
+    "id": 3,
+    "text": "Görev 3",
+    "completed": false
+  }
+]
