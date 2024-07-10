@@ -22,6 +22,10 @@ const App = () => {
       .catch(error => console.error('Error fetching tasks:', error));
   }, []);
 
+  useEffect(() => {
+    document.documentElement.style.setProperty('--primary-color', primaryColor);
+  }, [primaryColor]);
+
   const addTodo = (text) => {
     const newTodo = {
       id: Math.random(),
